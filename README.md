@@ -1,3 +1,4 @@
 # Night's blog of random (and mostly useless) investigation.
-## Usage
-Run ```npm run dev``` and go to ```http://localhost:3000``` to open the project locally.
+Run ```npm run dev``` and open ```http://localhost:3000``` in your browser to view the project locally.
+
+All logs are hardcoded and stored in app/public/data/logs.json.

@@ -1,5 +1,5 @@
 import BlogFullscreen from "./components/blog-fullscreen";
-import logs from "../../../public/data/logs.json";
+import logs from "../../public/data/logs.json";
 
 type PageProps = {
   params: Promise<{ id: string }>;

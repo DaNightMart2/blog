@@ -30,7 +30,7 @@ export default function BlogItem({
       {body.length > 100 ? (
         <div>
           <p className="text-left blur blog-excerpt blog-body">{body}</p>
-          <Link href={`/fullscreen/${id}`} className="gray-text">Read More...</Link>
+          <Link href={`/${id}`} className="gray-text">Read More...</Link>
         </div>
       ) : (
         <p className="text-left">{body}</p>

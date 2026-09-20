@@ -1,7 +1,16 @@
 import type { CSSProperties } from "react"
 
-export default function BlogFullscreen(
-  { title, body, publish_date }: { title: string, body: string, publish_date: string }
+export default function BlogFullscreen({
+  title,
+  body,
+  publish_date,
+  sources
+}: {
+  title: string,
+  body: string,
+  publish_date: string,
+  sources: string[][]
+}
 ) {
   const squareStyle: CSSProperties = {
     width: "700px",
@@ -17,6 +26,20 @@ export default function BlogFullscreen(
       <h3 className="text-center fullscren-title">{title}</h3>
       <h5 className='text-left gray-text'>{publish_date}</h5>
       <p className="text-left blog-body">{body}</p>
+
+      {sources[0][0] !== "" ? (
+        <div>
+          <h2 className="text-left blog-body">- Bibliography -</h2>
+          {Object.values(sources).map((source, key) => (
+            <a key={key} className="text-left blog-body link" href={source[1]} target="_blank">{source[0]}</a>
+          ))}
+        </div>
+      ): (
+        <div>
+          <h2 className="text-left blog-body">- Bibliography -</h2>
+          <p className="text-left blog-body">No sources provided.</p>
+        </div>
+      )}
     </div>
   );
 }

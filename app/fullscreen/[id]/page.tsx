@@ -13,12 +13,12 @@ export default async function Home({ params }: PageProps) {
     <div>
       <div>
         <h1>
-          <a className='title' href="/">Night's Blog</a>
+          <a className='link' href="/">Night's Blog</a>
         </h1>
         <p>Night's blog of random (and mostly useless) investigation.</p>
         <hr/>
       </div>
-      <BlogFullscreen title={log.title} body={log.body} publish_date={log.publish_date} />
+      <BlogFullscreen title={log.title} body={log.body} publish_date={log.publish_date} sources={log.sources} />
     </div>
   )
 }

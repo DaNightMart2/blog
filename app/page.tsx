@@ -1,4 +1,5 @@
 import BlogItem from "./components/blog-item";
+import AboutMe from "./components/about-me";
 import logs from "../public/data/logs.json";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
             <BlogItem key={key} id={log[0]} title={log[1].title} body={log[1].body} publish_date={log[1].publish_date}/>
           ))}
       </div>
+        <AboutMe/>
     </div>
   );
 }

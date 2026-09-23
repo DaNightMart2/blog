@@ -29,7 +29,7 @@ export default function BlogItem({
 
       {body.length > 100 ? (
         <div>
-          <p className="text-left blur blog-excerpt blog-body">{body}</p>
+          <p className="text-left blur blog-excerpt newline">{body}</p>
           <Link href={`/${id}`} className="gray-text">Read More...</Link>
         </div>
       ) : (

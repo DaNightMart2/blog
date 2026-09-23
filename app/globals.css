@@ -51,6 +51,12 @@ h1, p, a {
   justify-content: start;
 }
 
+
 .newline {
   white-space: pre-line;
+}
+
+.hr {
+  margin-top: 0px;
+  margin-bottom: 20px;
 }

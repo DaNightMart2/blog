@@ -1,5 +1,4 @@
-import BlogItem from "./components/blog-item";
-import logs from "../public/data/logs.json";
+import AboutMe from "./components/about-me";
 
 export default function Home() {
   return (
@@ -18,12 +17,7 @@ export default function Home() {
       </div>
       <hr className="hr"></hr>
 
-      <div className="blog-list">
-        {Object.entries(logs).map(
-          (log, key) => (
-            <BlogItem key={key} id={log[0]} title={log[1].title} body={log[1].body} publish_date={log[1].publish_date}/>
-          ))}
-      </div>
+      <AboutMe/>
     </div>
   );
 }

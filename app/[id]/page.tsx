@@ -19,11 +19,12 @@ export default async function Home({ params }: PageProps) {
           <a className="link" href="/about-me">About Me</a>
         </h4>
       </div>
-      <hr className="hr"></hr>
       <div>
         <p>Night's blog of random (and mostly useless) investigation.</p>
         <h1/>
       </div>
+      <hr className="hr"></hr>
+
       <BlogFullscreen title={log.title} body={log.body} publish_date={log.publish_date} sources={log.sources} />
     </div>
   )

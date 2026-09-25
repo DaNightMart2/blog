@@ -25,19 +25,19 @@ export default function BlogFullscreen({
     <div style={squareStyle}>
       <h3 className="text-center fullscren-title">{title}</h3>
       <h5 className='text-left gray-text'>{publish_date}</h5>
-      <p className="text-left blog-body">{body}</p>
+      <p className="text-left newline">{body}</p>
 
       {sources[0][0] !== "" ? (
         <div>
-          <h2 className="text-left blog-body">- Bibliography -</h2>
+          <h2 className="text-left newline">- Bibliography -</h2>
           {Object.values(sources).map((source, key) => (
-            <a key={key} className="text-left blog-body link" href={source[1]} target="_blank">{source[0]}</a>
+            <a key={key} className="text-left newline link" href={source[1]} target="_blank">{source[0]}</a>
           ))}
         </div>
       ): (
         <div>
-          <h2 className="text-left blog-body">- Bibliography -</h2>
-          <p className="text-left blog-body">No sources provided.</p>
+          <h2 className="text-left newline">- Bibliography -</h2>
+          <p className="text-left newline">No sources provided.</p>
         </div>
       )}
     </div>

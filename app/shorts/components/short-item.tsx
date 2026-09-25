@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
 import Link from "next/link";
 
-export default function BlogItem({
+export default function ShortItem({
   id,
   title,
   body,
@@ -15,7 +15,7 @@ export default function BlogItem({
 ) {
   const squareStyle: CSSProperties = {
     width: '300px',
-    height: '400px',
+    height: '300px',
     backgroundColor: '#393b3d',
     borderRadius: '20px',
     marginTop: '10px',
@@ -27,9 +27,9 @@ export default function BlogItem({
       <h3 className="text-center">{title}</h3>
       <h5 className="text-left gray-text">{publish_date}</h5>
 
-      {body.length > 100 ? (
+      {body.length > 50 ? (
         <div>
-          <p className="text-left blur blog-excerpt newline">{body}</p>
+          <p className="text-left blur shorts-excerpt newline">{body}</p>
           <Link href={`/${id}`} className="gray-text">Read More...</Link>
         </div>
       ) : (

@@ -1,17 +1,12 @@
 import BlogItem from "./components/blog-item";
+import Header from "./components/header";
 import logs from "../public/data/logs.json";
 
 export default function Home() {
   return (
     <div>
-      <div>
-        <h1>
-          <a className="link" href="/">Night's Blog</a>
-        </h1>
-        <p>Night's blog of random (and mostly useless) investigation.</p>
-        <h1/>
-      </div>
-
+      <Header/>
+      <h1 className="text-left">Logs</h1>
       <div className="blog-list">
         {Object.entries(logs).map(
           (log, key) => (

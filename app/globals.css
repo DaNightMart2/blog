@@ -66,3 +66,8 @@ h1, p, a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.shorts-excerpt {
+  height: 170px;
+  overflow: hidden;
+}

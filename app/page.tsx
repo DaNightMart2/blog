@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <div>
       <Header/>
+      <h1 className="text-left">Logs</h1>
       <div className="blog-list">
         {Object.entries(logs).map(
           (log, key) => (

@@ -8,6 +8,9 @@ export default function Header() {
                 <h4>
                     <a className="link" href="/about-me">About Me</a>
                 </h4>
+                <h4>
+                    <a className="link" href="/shorts">Shorts</a>
+                </h4>
             </div>
             <p>Night's blog of random (and mostly useless) investigation.</p>
             <hr className="hr"></hr>

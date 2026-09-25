@@ -1,4 +1,15 @@
-# Night's blog of random (and mostly useless) investigation.
-Run ```npm run dev``` and open ```http://localhost:3000``` in your browser to view the project locally.
+# Night's blog of random (and mostly useless) investigation
+## Usage
+- Install dependencies with `npm install`.
+- Run `npm run dev`, then open `http://localhost:3000`.
 
-All logs are hardcoded and stored in app/public/data/logs.json.
+## Stack
+- Next.js (React)
+- TypeScript
+- Tailwind CSS
+
+## Architecture
+This is a static Next.js blog. Log and short content is currently stored as JSON files in `public/data/` and used to render the site.
+
+## Deployment
+Deployed on [Vercel](https://blog-danightmart2.vercel.app).

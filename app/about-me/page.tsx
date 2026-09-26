@@ -1,7 +1,7 @@
 import AboutMe from "./components/about-me";
 import Header from "../components/header";
 
-export default function Home() {
+export default function AboutMePage() {
   return (
     <div>
       <Header/>

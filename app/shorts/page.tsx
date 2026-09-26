@@ -2,7 +2,7 @@ import ShortItem from "./components/short-item";
 import Header from "../components/header";
 import shorts from "../../public/data/shorts.json";
 
-export default function Home() {
+export default function Shorts() {
   return (
     <div>
       <Header/>

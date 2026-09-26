@@ -1,0 +1,14 @@
+{
+    "logs": {
+        "title": "Logs",
+        "ideas": [
+            "Thinking", "The Root of Everything"
+        ]
+    },
+    "features": {
+        "title": "Features",
+        "ideas": [
+            "Account system", "Emailing updates"
+        ]
+    }
+}

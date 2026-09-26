@@ -7,7 +7,7 @@ type PageProps = {
   params: Promise<{ id: string }>;
 };
 
-export default async function Home({ params }: PageProps) {
+export default async function BlogPage({ params }: PageProps) {
   const { id } = await params;
   const log = logs[id as keyof typeof logs];
   const short = shorts[id as keyof typeof shorts];

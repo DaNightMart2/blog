@@ -1,4 +1,3 @@
-import { CSSProperties } from "react";
 import Link from "next/link";
 
 export default function ShortItem({
@@ -13,17 +12,8 @@ export default function ShortItem({
   publish_date: string
 }
 ) {
-  const squareStyle: CSSProperties = {
-    width: '300px',
-    height: '300px',
-    backgroundColor: '#393b3d',
-    borderRadius: '20px',
-    marginTop: '10px',
-    marginLeft: '150px'
-  };
-
   return (
-    <div style={squareStyle} className="blog-fullscreen">
+    <article className="blog-card blog-card-short">
       <h3 className="text-center">{title}</h3>
       <h5 className="text-left gray-text">{publish_date}</h5>
 
@@ -35,6 +25,6 @@ export default function ShortItem({
       ) : (
         <p className="text-left">{body}</p>
       )}
-    </div>
+    </article>
   );
 }

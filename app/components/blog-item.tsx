@@ -1,4 +1,3 @@
-import { CSSProperties } from "react";
 import Link from "next/link";
 
 export default function BlogItem({
@@ -13,17 +12,8 @@ export default function BlogItem({
   publish_date: string
 }
 ) {
-  const squareStyle: CSSProperties = {
-    width: '300px',
-    height: '400px',
-    backgroundColor: '#393b3d',
-    borderRadius: '20px',
-    marginTop: '10px',
-    marginLeft: '150px'
-  };
-
   return (
-    <div style={squareStyle} className="blog-fullscreen">
+    <article className="blog-card">
       <h3 className="text-center">{title}</h3>
       <h5 className="text-left gray-text">{publish_date}</h5>
 
@@ -35,6 +25,6 @@ export default function BlogItem({
       ) : (
         <p className="text-left">{body}</p>
       )}
-    </div>
+    </article>
   );
 }

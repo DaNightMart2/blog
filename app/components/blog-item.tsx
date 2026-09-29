@@ -1,9 +1,4 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Link from "next/link";
-import engTexts from "../../public/data/en/texts.json";
-import esTexts from "../../public/data/es/texts.json";
 
 export default function BlogItem({
   id,
@@ -17,26 +12,6 @@ export default function BlogItem({
   publish_date: string
 }
 ) {
-  const [language, setLanguage] = useState("en");
-
-  useEffect(() => {
-    const checkLanguage = () => {
-      const savedLang = window.localStorage.getItem("language");
-      if (savedLang) {
-        setLanguage(savedLang);
-      }
-    };
-
-    checkLanguage();
-    window.addEventListener("languagechange", checkLanguage);
-
-    return () => {
-      window.removeEventListener("languagechange", checkLanguage);
-    };
-  }, []);
-
-  const texts = language === "en" ? engTexts : esTexts;
-
   return (
     <article className="blog-card">
       <h3 className="text-center">{title}</h3>
@@ -45,7 +20,7 @@ export default function BlogItem({
       {body.length > 100 ? (
         <div>
           <p className="text-left blur blog-excerpt newline">{body}</p>
-          <Link href={`/${id}`} className="gray-text">{texts["read-more"]}</Link>
+          <Link href={`/${id}`} className="gray-text">Read More...</Link>
         </div>
       ) : (
         <p className="text-left">{body}</p>

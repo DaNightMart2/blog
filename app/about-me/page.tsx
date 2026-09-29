@@ -1,5 +1,5 @@
 import AboutMe from "./components/about-me";
-import Header from "../components/header";
+import Header from "#/components/header";
 
 export default function AboutMePage() {
   return (

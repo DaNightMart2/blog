@@ -1,5 +1,5 @@
-import Header from "../components/header";
-import ideas from "../../public/data/ideas.json";
+import Header from "#/components/header";
+import ideas from "@/public/data/ideas.json";
 
 export default function Ideas() {
   return (

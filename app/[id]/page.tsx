@@ -1,7 +1,7 @@
 import BlogFullscreen from "./components/blog-fullscreen";
-import Header from "../components/header";
-import logs from "../../public/data/logs.json";
-import shorts from "../../public/data/shorts.json";
+import Header from "#/components/header";
+import logs from "@/public/data/logs.json";
+import shorts from "@/public/data/shorts.json";
 
 type PageProps = {
   params: Promise<{ id: string }>;

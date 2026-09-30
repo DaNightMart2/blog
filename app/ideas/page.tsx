@@ -5,7 +5,7 @@ export default function Ideas() {
   return (
     <div>
       <Header/>
-      <h1 className="text-left">Ideas</h1>
+      <h1 className="text-left">Ideas for the Blog</h1>
 
       {Object.entries(ideas).map(
         (ideaBlock, key) => (

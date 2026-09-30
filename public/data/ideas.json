@@ -1,14 +1,16 @@
 {
     "logs": {
-        "title": "Logs",
+        "title": "Ideas for Future Logs",
         "ideas": [
-            "Thinking", "The Root of Everything"
+            "Memorization",
+            "Thinking"
         ]
     },
     "features": {
-        "title": "Features",
+        "title": "Ideas for Features",
         "ideas": [
-            "Account system", "Emailing updates"
+            "Manually checked localizations (English and Spanish)",
+            "Accounts system + Emails for updates to the blog"
         ]
     }
 }

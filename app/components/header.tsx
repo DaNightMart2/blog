@@ -1,3 +1,5 @@
+import ThemeToggle from "./theme-toggle";
+
 export default function Header() {
     return(
         <div>
@@ -14,6 +16,7 @@ export default function Header() {
                 <h4>
                     <a className="link" href="/ideas">Ideas</a>
                 </h4>
+                <ThemeToggle/>
             </div>
             <p>Night's blog of random (and mostly useless) investigation.</p>
             <hr className="hr"></hr>
